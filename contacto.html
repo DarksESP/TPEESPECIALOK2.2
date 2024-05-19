@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://kit.fontawesome.com/bf9526212c.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="estilo/estilo.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <header>
+      <div class="logo"></div>
+
+      <div class="menu-container">
+        <div>
+          <button id="buttonMenu"><i class="fa-solid fa-bars"></i></button>
+        </div>
+
+        <nav class="nav-principal">
+          <div class="containerButtonSalirMenu">
+            <button id="buttonSalirMenu">
+              <i class="fa-regular fa-circle-xmark"></i>
+            </button>
+          </div>
+          <ul class="navUl-container-items">
+            <li class="nav-item">
+              <i class="fa-solid fa-house"></i><a href="index.html">Inicio</a>
+            </li>
+            <li class="nav-item">
+              <i class="fa-solid fa-gamepad"></i
+              ><a href="juegos.html">Juegos</a>
+            </li>
+            <li class="nav-item">
+              <i class="fa-solid fa-headset"></i
+              ><a href="noticias.html">Noticias</a>
+            </li>
+            <li class="nav-item">
+              <i class="fa-solid fa-user"></i
+              ><a href="Contacto.html">Contacto</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    
+      <div class="containerDestacadoPrincipal">
+        <div class="tituloDestacado">
+          <h1>Destacado<i class="fa-solid fa-trophy"></i></h1>
+        </div>
+      </div>
+    
+
+    <main>
+      <div class="formContainer">
+        <h3>Contacto</h3>
+        <form id="formPrincipal" action="">
+          <div class="form-item">
+            <label for="">Nombre:</label>
+            <input name="nombre" type="text" required />
+          </div>
+
+          <div class="form-item">
+            <label for="">Apellido:</label>
+            <input name="apellido" type="text" required />
+          </div>
+
+          <div class="form-item">
+            <label for="">Email:</label>
+            <input name="email" type="email" required />
+          </div>
+
+          <div class="form-item">
+            <label for="">Contraseña:</label>
+            <input name="contraseña" type="password" required />
+          </div>
+
+          <div>
+            <label id="mostrarCapcha" for=""></label>
+          </div>
+          <div class="form-item">
+            <label for="">INGRESAR CAPCHA</label>
+            <input type="text" name="capchaIngresado" required />
+          </div>
+
+          <div class="buttonGenerarCapcha">
+            <button type="button" id="buttonGenerarCapcha">
+              GENERAR CAPCHA
+            </button>
+          </div>
+
+          <div class="form-item">
+            <button>ENVIAR</button>
+          </div>
+
+          <div>
+            <p id="capchaIsValid"></p>
+          </div>
+        </form>
+      </div>
+    </main>
+
+    <footer class="footerPrincipal"></footer>
+
+    <script type="text/javascript" src="js/generarCapcha.js"></script>
+    <script type="text/javascript" src="js/script.js"></script>
+  </body>
+</html>

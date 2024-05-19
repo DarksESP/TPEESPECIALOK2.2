@@ -1,0 +1,319 @@
+* {
+  margin: 0; /* REINICIO MARGENES Y PADDING A 0*/
+  padding: 0;
+}
+
+/* ------------------ESTILOS NAV Y HEADER ----------------------------*/
+header {
+  display: flex;
+  align-items: center;
+  height: 50px;
+  /*background-color: rgb(92, 92, 216);*/
+  background-image: url(/img/imgBgHeader.jpg);
+  background-size: cover;
+}
+
+body {
+  background-image: linear-gradient(to right, red, rgb(255, 187, 0));
+}
+
+.navUl-container-items li a {
+  text-decoration: none;
+  color: rgb(236, 224, 207); /*CAMBIO COLOR DE LA LETRA*/
+}
+
+@media only screen and (max-width: 668px) {
+  .nav-principal {
+    display: none;
+    /* background-color: rgb(129, 78, 78); /*COLOR DE FONDO*/
+    background-image: url(/img/imgBgNav.jpg);
+
+    position: fixed;
+    top: 0;
+    bottom: 0; /*MANIPULO EL NAV Y ESTABLEZCO QUE SU  POSICION ESTARÁ A LA PAR DEL TOP, RIGHT Y BOTTOM 0; ES DECIR, NO TENDRÁ MARGEN */
+    right: 0;
+    width: 150px; /*MI NAV OCUPA ESE ANCHO EN LA PANTALLA*/
+    z-index: 1;
+  }
+
+  .navUl-container-items {
+    display: flex; /*DISPLAY FLEX PARA USAR LAS PROPIEDADES Y MANIPULAR LOS ELEMENTOS*/
+    flex-direction: column; /*PARA ESTABLECER QUE LOS ELEMENTOS DENTRO DEL NAV ESTÉN EN COLUMNAS*/
+    margin-top: 80px; /*ESTABLEZCO QUE MI NAV TENDRA UNA DISTANCIA DE 80PX DE LA PARTE SUPERIOR DE LA PANTALLA*/
+    width: 100%;
+  }
+
+  .navUl-container-items li {
+    padding: 10px; /*SEPARO LOS LI*/
+    list-style: none; /*ELIMINO EL ESTILO POR DEFECTO*/
+    color: rgb(236, 224, 207); /*CAMBIO COLOR DE LA LETRA*/
+    /*ESTABLEZCO QUE MIS LI OCUPARAN UN 100% DEL ANCHO POSIBLE*/
+  }
+
+  .navUl-container-items li:hover {
+    background-color: rgb(189, 45, 218);
+    color: rgb(255, 187, 0);
+  }
+
+  .nav-item i {
+    margin: 5px; /*LE AGREGO UNA PEQUEÑA SEPARACION AL SIMBOLO DE LOS ITEMS*/
+  }
+
+  #buttonMenu {
+    position: absolute; /*MUEVE EL ELEMENTO A LA POSICION REQUERIDA*/
+    top: 10px;
+    right: 30px;
+    height: 30px;
+    width: 30px;
+  }
+
+  #buttonMenu i {
+    font-size: 20px;
+  }
+
+  #buttonMenu i:hover {
+    color: rgb(72, 255, 0);
+  }
+
+  .containerButtonSalirMenu #buttonSalirMenu {
+    position: absolute; /*ALINEO EL LOGO DENTRO DEL MENU A LA POSICION DESEADA*/
+    top: 30px;
+    right: 30px;
+
+    border-style: none; /*HICE ESTO PARA EL BOTON DE SALIR MENU REPASAR DESPUES*/
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+  }
+
+  #buttonSalirMenu i {
+    font-size: 30px; /*TAMAÑO DEL SIMBOLO DE SALIR MENU*/
+  }
+
+  #buttonSalirMenu i:hover {
+    color: red;
+  }
+
+  /*CLASES ESPECIALES PARA AGREGAR DESDE JS*/
+
+  .mostrar {
+    display: flex;
+  }
+}
+
+/* ---------------------------TERMINA ESTILOS NAV Y HEADER ---------------------------------------- */
+
+/*----------------------------ESTILOS IMG DESTACADOS --------------------------------------------*/
+
+/*IMG DE INDEX */
+.containerDestacadoPrincipal {
+  width: 100%;
+  height: 155px;
+}
+.containerImgdestacado {
+  height: 80%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.destacadoItem {
+  width: 100%;
+  height: 100%;
+  border-color: black;
+  border-style: double;
+}
+
+.destacadoItem img {
+  width: 100%;
+  height: 100%;
+}
+
+.tituloDestacado {
+  background-image: url(/img/imgBgNav.jpg);
+  color: antiquewhite;
+  text-align: center;
+}
+
+/* IMG DE SECTION JUEGOS HEAD*/
+.containerImgHeadSection {
+  width: 100%;
+  height: 180px;
+}
+
+.imgHeadSection img {
+  width: 100%;
+}
+
+
+
+/*ESTILOS LISTA JUEGOS ---- SECCION: JUEGOS */
+
+.containerListaJuegos {
+  width: 100%;
+}
+
+.containerListaJuegos .listaJuegos {
+  width: 90%;
+}
+
+.containerListaJuegos .listaJuegos .listaJuegosItem {
+  margin: 20px;
+  list-style: none;
+}
+
+.listaJuegosItem .itemTitulo {
+  font-weight: bold;
+  font-size: 1em;
+}
+
+/*-----------------------FORM / CONTACTO --------------------*/
+
+.formContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-image: url(/img/imgBgSectionMarioBros.webp);
+  background-size: cover;
+  color: antiquewhite;
+
+  /*VER DESPUES*/
+}
+
+#formPrincipal input {
+  display: block; /*APLICAMOS UN DISPLAY BLOCK EN LOS INPUT PARA ALINEARLOS HACIA ABAJO/EN BLOQUE*/
+
+  border-style: groove;
+  height: 20px;
+}
+
+.form-item {
+  padding: 5px; /*SEPARAMOS CADA ITEM DEL FORM ENTRE SI*/
+}
+
+.buttonGenerarCapcha {
+  margin-top: 20px;
+}
+
+@media screen and (min-width: 669px) {
+  /* */
+
+  #buttonMenu,
+  #buttonSalirMenu {
+    display: none;
+  }
+
+  header {
+    height: 120px;
+    background-size: auto;
+    margin-top: 40px;
+  }
+
+  /*----------------------ESTILOS NAV  ---------------------*/
+  .nav-principal {
+    background-image: url(/img/imgBgNav.jpg);
+    height: 40px;
+    width: 100%;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+  }
+
+  .navUl-container-items {
+    display: flex;
+    position: absolute;
+    top: 0px;
+    right: 500px;
+  }
+
+  .navUl-container-items .nav-item {
+    color: rgb(236, 224, 207);
+    font-size: 20px;
+    padding: 10px;
+  }
+
+  .navUl-container-items .nav-item:hover,
+  .navUl-container-items a:hover {
+    color: rgb(255, 187, 0);
+  }
+
+  .navUl-container-items .nav-item a {
+    color: rgb(236, 224, 207);
+  }
+
+  .navUl-container-items {
+    list-style: none;
+  }
+
+  .navUl-container-items .nav-item i {
+    margin-right: 10px;
+  }
+
+  /*---------------------TERMINA ESTILOS NAV --------------------------- */
+
+  /*---------------------COMIENZA ESTILOS DESTACADOS IMG---------------------- */
+  .tituloDestacado {
+    background-image: url(/img/imgBgNav.jpg);
+    color: antiquewhite;
+    text-align: center;
+  }
+
+  .tituloDestacado:hover {
+    color: rgb(255, 187, 0);
+  }
+
+  .containerDestacadoPrincipal {
+    width: 100%;
+    height: 180px;
+  }
+  .containerImgdestacado {
+    height: 80%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+  }
+
+  .destacadoItem {
+    width: 30%;
+    height: 100%;
+    border-color: black;
+    border-style: double;
+  }
+
+  .destacadoItem img {
+    width: 100%;
+    height: 100%;
+  }
+
+  /*-------------------------------------------TERMINA ESTILOS DESTACADOS IMG -----------------------*/
+
+  /* SECCION JUEGOS LISTA*/
+
+  .containerImgHeadSection {
+    display:none;
+  }
+  
+  .containerPrincipalImgHead {
+    width:100%;
+    height: 170px;
+    background-image: url(/img/collageRetroJuegos.jpg);
+    background-attachment: fixed;
+    
+  }
+  
+  .tituloNoticia {
+    position: absolute;
+    top: 250px;
+    left: 350px;
+    color: antiquewhite;
+   
+  }
+
+  /*TERMINA SECCION JUEGOS LISTA*/
+
+  .footerPrincipal {
+    background-color: rgba(210, 108, 108, 0.844);
+    height: 100px;
+    width: 100%;
+  }
+}
