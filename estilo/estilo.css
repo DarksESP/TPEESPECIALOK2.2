@@ -103,13 +103,64 @@ body {
 
 /* ---------------------------TERMINA ESTILOS NAV Y HEADER ---------------------------------------- */
 
+/*--------------------------ESTILOS FOOTER------------------------------------------- */
+footer {
+  background-image: url(/img/imgBgNav.jpg);
+  height: 150px;
+
+  margin-top: 25px;
+}
+
+footer .socialMediaContainer ul {
+  position: relative;
+  top: 10px;
+  left: 15px;
+}
+
+footer .socialMediaContainer li {
+  color: antiquewhite;
+  list-style: none;
+  margin-top: 10px;
+}
+
+footer .socialMediaContainer li:hover,
+footer .socialMediaContainer li a:hover {
+  color: rgb(255, 187, 0);
+}
+
+footer .socialMediaContainer li a {
+  text-decoration: none;
+  color: antiquewhite;
+  margin-left: 5px;
+}
+
+.derechosReservados {
+  margin-top: 50px;
+  text-align: center;
+  color: antiquewhite;
+}
+
+/*-----------------TERMINA ESTILOS FOOTER ---------------------*/
+
 /*----------------------------ESTILOS IMG DESTACADOS --------------------------------------------*/
 
-/*IMG DE INDEX */
-.containerDestacadoPrincipal {
+/*IMG DE INDEX / MAIN INICIO*/
+
+.containerImgsPrincipalDestacado {
   width: 100%;
-  height: 155px;
+  height: auto;
 }
+
+
+.containerBienvenida {
+  margin: 15px;
+  width: 50%;
+}
+.containerDestacado {
+  width: 100%;
+  height: auto;
+}
+
 .containerImgdestacado {
   height: 80%;
   width: 100%;
@@ -138,19 +189,22 @@ body {
 /* IMG DE SECTION JUEGOS HEAD*/
 .containerImgHeadSection {
   width: 100%;
-  height: 180px;
+  height: auto;
 }
 
 .imgHeadSection img {
   width: 100%;
 }
 
-
-
 /*ESTILOS LISTA JUEGOS ---- SECCION: JUEGOS */
-
+.mainJuegos {
+  height: auto;
+}
 .containerListaJuegos {
   width: 100%;
+  border-color: antiquewhite;
+  border-style: groove;
+  height: 550px;
 }
 
 .containerListaJuegos .listaJuegos {
@@ -173,9 +227,11 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-image: url(/img/imgBgSectionMarioBros.webp);
+  background-image: url(/img/MWEventoImg.jpg);
   background-size: cover;
   color: antiquewhite;
+  text-shadow: 1px 1px #000;
+  text-transform: uppercase;
 
   /*VER DESPUES*/
 }
@@ -194,10 +250,59 @@ body {
 .buttonGenerarCapcha {
   margin-top: 20px;
 }
+/*----------SECCION CONTACTO/EVENTO ------------------*/
+.eventoExplicacion {
+  width: 100%;
+  text-align: center;
+}
+
+.eventoExplicacion p {
+  margin: 10px;
+}
+
+/* --------------SECCION NOTICIAS ------------*/
+.mainNoticias {
+  height: auto;
+}
+
+/* -------------TABLA/REVIEWS ---------------*/
+.tableReviews,
+th,
+td {
+  border: 1px solid black;
+  border-collapse: collapse;
+  
+}
+
+.tableReviews {
+  display: flex;
+  justify-content: center;
+  
+}
+
+
+
+.containerReview {
+  width: 90%;
+  text-align: left;
+  height: auto;
+  margin: 25px;
+}
+
+.containerReview p {
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+.containerReview .nombreDeJuego {
+  font-size: 20px;
+}
+/*--------------------------------------------*/
+/* -------------------------------------------*/
+
+/*MEDIA QUERIES TECLADO */
 
 @media screen and (min-width: 669px) {
-  /* */
-
   #buttonMenu,
   #buttonSalirMenu {
     display: none;
@@ -251,7 +356,18 @@ body {
 
   /*---------------------TERMINA ESTILOS NAV --------------------------- */
 
-  /*---------------------COMIENZA ESTILOS DESTACADOS IMG---------------------- */
+  /*---------------------COMIENZA ESTILOS DESTACADOS IMG / INICIO---------------------- */
+
+  .containerImgsPrincipalDestacado {
+    height: 200px;
+    width: 100%;
+  }
+
+  .containerBienvenida {
+    margin: 15px;
+    width: 50%;
+  }
+
   .tituloDestacado {
     background-image: url(/img/imgBgNav.jpg);
     color: antiquewhite;
@@ -262,7 +378,7 @@ body {
     color: rgb(255, 187, 0);
   }
 
-  .containerDestacadoPrincipal {
+  .containerDestacado {
     width: 100%;
     height: 180px;
   }
@@ -289,31 +405,63 @@ body {
 
   /* SECCION JUEGOS LISTA*/
 
-  .containerImgHeadSection {
-    display:none;
+  .mainJuegos {
+    height: 250px;
   }
-  
-  .containerPrincipalImgHead {
-    width:100%;
-    height: 170px;
+
+  .containerImgHeadSection img {
+    display: none;
+  }
+  .containerImgHeadSection {
+    width: 100%;
+    height: 150px;
     background-image: url(/img/collageRetroJuegos.jpg);
     background-attachment: fixed;
-    
+    background-position: center;
   }
-  
-  .tituloNoticia {
-    position: absolute;
-    top: 250px;
-    left: 350px;
-    color: antiquewhite;
-   
+
+  .mainJuegos {
+    height: 255px;
+  }
+  .containerListaJuegos {
+    border-style: none;
+    height: 250px;
   }
 
   /*TERMINA SECCION JUEGOS LISTA*/
 
-  .footerPrincipal {
-    background-color: rgba(210, 108, 108, 0.844);
-    height: 100px;
+  /* -----------SECCION CONTACTO FORM -------------*/
+
+  .mainContacto {
+    height: 760px;
+  }
+
+  .eventoExplicacion {
     width: 100%;
+    text-align: center;
+  }
+
+  .eventoExplicacion p {
+    margin: 10px;
+  }
+
+  /* -------------TABLA/REVIEWS TECLADO MODIFICACIONES---------------*/
+
+  .containerReview {
+    width: 90%;
+    text-align: left;
+    height: auto;
+    margin: 25px;
+
+  }
+
+
+  .containerReview p {
+    margin-top: 15px;
+    margin-bottom: 15px;
+  }
+
+  .containerReview .nombreDeJuego {
+    font-size: 20px;
   }
 }
