@@ -9,7 +9,7 @@ header {
   align-items: center;
   height: 50px;
   /*background-color: rgb(92, 92, 216);*/
-  background-image: url(/img/imgBgHeader.jpg);
+  background-image: url(../img/imgBgHeader.jpg);
   background-size: cover;
 }
 
@@ -25,10 +25,10 @@ body {
 @media only screen and (max-width: 668px) {
   .nav-principal {
     display: none;
-    /* background-color: rgb(129, 78, 78); /*COLOR DE FONDO*/
-    background-image: url(/img/imgBgNav.jpg);
-
+    background-image: url(../img/imgBgNav.jpg);
+    
     position: fixed;
+    /* background-color: rgb(129, 78, 78); /*COLOR DE FONDO*/
     top: 0;
     bottom: 0; /*MANIPULO EL NAV Y ESTABLEZCO QUE SU  POSICION ESTARÁ A LA PAR DEL TOP, RIGHT Y BOTTOM 0; ES DECIR, NO TENDRÁ MARGEN */
     right: 0;
@@ -105,7 +105,7 @@ body {
 
 /*--------------------------ESTILOS FOOTER------------------------------------------- */
 footer {
-  background-image: url(/img/imgBgNav.jpg);
+  background-image: url(../img/imgBgNav.jpg);
   height: 150px;
 
   margin-top: 25px;
@@ -151,7 +151,6 @@ footer .socialMediaContainer li a {
   height: auto;
 }
 
-
 .containerBienvenida {
   margin: 15px;
   width: 50%;
@@ -181,7 +180,7 @@ footer .socialMediaContainer li a {
 }
 
 .tituloDestacado {
-  background-image: url(/img/imgBgNav.jpg);
+  background-image: url(../img/imgBgNav.jpg);
   color: antiquewhite;
   text-align: center;
 }
@@ -227,11 +226,9 @@ footer .socialMediaContainer li a {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-image: url(/img/MWEventoImg.jpg);
+  background-image: url(../img/MWEventoImg.jpg);
   background-size: cover;
   color: antiquewhite;
-  text-shadow: 1px 1px #000;
-  text-transform: uppercase;
 
   /*VER DESPUES*/
 }
@@ -271,16 +268,12 @@ th,
 td {
   border: 1px solid black;
   border-collapse: collapse;
-  
 }
 
 .tableReviews {
   display: flex;
   justify-content: center;
-  
 }
-
-
 
 .containerReview {
   width: 90%;
@@ -316,7 +309,7 @@ td {
 
   /*----------------------ESTILOS NAV  ---------------------*/
   .nav-principal {
-    background-image: url(/img/imgBgNav.jpg);
+    background-image: url(../img/imgBgNav.jpg);
     height: 40px;
     width: 100%;
     position: absolute;
@@ -369,7 +362,7 @@ td {
   }
 
   .tituloDestacado {
-    background-image: url(/img/imgBgNav.jpg);
+    background-image: url(../img/imgBgNav.jpg);
     color: antiquewhite;
     text-align: center;
   }
@@ -415,7 +408,7 @@ td {
   .containerImgHeadSection {
     width: 100%;
     height: 150px;
-    background-image: url(/img/collageRetroJuegos.jpg);
+    background-image: url(../img/collageRetroJuegos.jpg);
     background-attachment: fixed;
     background-position: center;
   }
@@ -452,9 +445,7 @@ td {
     text-align: left;
     height: auto;
     margin: 25px;
-
   }
-
 
   .containerReview p {
     margin-top: 15px;
